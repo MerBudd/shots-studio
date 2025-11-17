@@ -1,18 +1,17 @@
-[![Platform](https://shields.io/badge/platform-android-green.svg)](https://github.com/AnsahMohammad/shots-studio)
-[![License](https://img.shields.io/badge/license-GPL3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
-[![Latest Release](https://img.shields.io/github/v/release/AnsahMohammad/shots-studio?label=release)](https://github.com/AnsahMohammad/shots-studio/releases/latest)
-[![Chat](https://img.shields.io/badge/Discussions-Join-blue?logo=github)](https://github.com/AnsahMohammad/shots-studio/discussions)
-[![Downloads](https://img.shields.io/github/downloads/AnsahMohammad/shots-studio/total)](https://github.com/AnsahMohammad/shots-studio/releases)
-
 <div align="center">
   <img src="shots_studio/assets/icon/icon.png" width="20%" />
 
 # Shots Studio
 A Screenshot Manager to Declutter Your Gallery
+
+[![Platform](https://shields.io/badge/Platform-Android-darkgreen.svg)](#)
+[![License](https://img.shields.io/badge/License-GPL3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+[![Latest Release](https://img.shields.io/github/v/release/AnsahMohammad/shots-studio?label=Release)](https://github.com/AnsahMohammad/shots-studio/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/AnsahMohammad/shots-studio/total)](https://github.com/AnsahMohammad/shots-studio/releases)
+[![Chat](https://img.shields.io/badge/Discussions-Join-blue?logo=github)](https://github.com/AnsahMohammad/shots-studio/discussions)
 </div>
 
-Shots Studio turns your chaotic screenshot folder into an **intelligent, organized archive**.  
-Now powered by **on-device AI with Gemma**, you can process screenshots **offline** — faster, private, and without internet dependency.
+Shots Studio turns your chaotic screenshot folder into an **intelligent, organized archive**.    
 
 ---
 
@@ -23,11 +22,14 @@ Drowning in screenshots you can’t find when you need them?
 
 With Shots Studio, you can:
 
-* **Search** by content — not just file names.
-* Add or generate **tags** automatically using AI.
+* **Search** by image content — not just file names.
+* Add **tags** or generate them automatically using AI.
 * Group related screenshots into custom **collections**.
-* **Run AI fully offline** with the latest **Gemma** on-device model for faster, privacy-first processing.
+* Choose to **Run AI fully offline** with the latest **Gemma** on-device model for faster, privacy-first processing.
+* Choose to process online for better processing, or if your device can't run on-device models.
 
+> [!NOTE]
+> If you choose to process online, your images are sent directly to the Gemini API. We don't see your images!
 ---
 
 ## Download
@@ -36,7 +38,6 @@ With Shots Studio, you can:
 
 [<img src="docs/assets/get-it-on-github.png"
     alt="Get it on GitHub" height="80">](https://github.com/AnsahMohammad/shots-studio/releases/latest)
-
 [<img src="https://f-droid.org/badge/get-it-on.png"
     alt="Get it on F-Droid" height="80">](https://f-droid.org/en/packages/com.ansah.shots_studio/)
 
@@ -47,17 +48,17 @@ With Shots Studio, you can:
 ## Key Features
 
 * **AI-Powered Search**  
-  Find screenshots by **text**, **objects**, or **topics** they contain — even if never labeled.
+  Find screenshots by **text**, **objects**, or **topics** they contain — even if you don't label them manually.
 
 * **Smart Tagging**  
   Let AI suggest tags or add your own to keep things tidy.
 
 * **Collections**  
-  Group related screenshots for quick navigation.
+  Group related screenshots into **collections** for quick navigation.
 
 * **Choose Your AI**  
-  - **Gemma On-Device AI** → Private, offline, instant results.  
-  - **Gemini 2.0 Flash / Gemini 2.5 Pro** → Cloud-powered speed or deep analysis.
+  - **Gemma On-Device** → Private, offline, fast results.  
+  - **Gemini 2.0 Flash, 2.5 Flash-Lite, 2.5 Flash or 2.5 Pro** → Cloud-powered for better analysis.
 
 * **Offline AI Processing**  
   Process screenshots **without an internet connection** using the integrated Gemma model — great for privacy and speed.
@@ -69,8 +70,14 @@ With Shots Studio, you can:
 
 ## How It Works + Privacy
 
-By default, Shots Studio can send your screenshot data to **Google’s Gemini API** for cloud-powered analysis.  
-For privacy-first use, switch to **Gemma on-device AI** — no data leaves your phone.
+Shots Studio first analyzes your screenshots using AI, identifying any text, objects or topics in them.  
+Then, it creates a description and adds tags to screenshots. If you want, you can also manually edit and add a description and tags.  
+This allows you to easily search your screenshots — without needing to use specific search terms, or combing through your entire gallery to find an image.
+
+By default, Shots Studio sends your screenshots to **Google’s Gemini API** for cloud-powered analysis.  
+This means Google processes your images, but **we don't see them!**
+
+For privacy-first use, you can switch to **Gemma on-device AI** — no data leaves your phone.
 
 More details: [Gemini API Privacy Policy](https://ai.google.dev/gemini-api/terms).
 
@@ -81,20 +88,20 @@ More details: [Gemini API Privacy Policy](https://ai.google.dev/gemini-api/terms
 * **Declutter your gallery** — No more endless scrolling.
 * **Instant access** — Search like you search your notes.
 * **Customizable AI** — Cloud or offline, you choose.
-* **Privacy-first** — Offline AI means no data leaves your device.
+* **Privacy-first** — Offline AI means no data leaves your device. We don't see your screenshots.
 * **Community-built** — 100% open source.
 
 ---
 
 ## Getting Started
 
-1. **Choose AI Mode**  
+1. **Install the App**  
+   - Download from [GitHub Releases](https://github.com/AnsahMohammad/shots-studio/releases/latest) or [F-Droid](https://f-droid.org/en/packages/com.ansah.shots_studio/).
+   - Install the APK on your device.
+  
+2. **Choose AI Mode**  
    - For cloud AI: Get a [Gemini API key](https://ai.google.dev/gemini-api/docs/api-key).  
    - For offline AI: Enable **Gemma On-Device** in Settings (no API key needed).
-
-2. **Install the App**  
-   - Download from [Releases](https://github.com/AnsahMohammad/shots-studio/releases/latest) or [F-Droid](https://f-droid.org/en/packages/com.ansah.shots_studio/).
-   - Install the APK on your device.
 
 3. **Grant Permissions**  
    Allow storage access to scan and process screenshots.
@@ -107,7 +114,7 @@ More details: [Gemini API Privacy Policy](https://ai.google.dev/gemini-api/terms
 ## Contributing
 
 We welcome contributions — code, features, bug fixes, or docs.  
-See `CONTRIBUTING.md` or open a discussion/PR.
+See [CONTRIBUTING.md](/CONTRIBUTING.md) or open a discussion/PR.
 
 ---
 
